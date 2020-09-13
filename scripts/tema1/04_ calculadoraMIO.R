@@ -90,12 +90,89 @@
 379%/%24
 
 
+##otras funciones de calculadora básica
+
+#raíz cuadrada
+#sqrt(x)
+
+
+sqrt(25)
+
+#eponencial
+#exp(x)
+
+exp(1)
+
+#logaritmo nepeiano
+#log(x)
+
+log(1)
+
+log(exp(1))
+
+#logaritmo base 10
+#log10(x)
+
+log10(1000)
+
+#logaritmo cualquier base
+#log(x,a)
+
+log(1000,10)
+
+log(3000,10)
+
+#número absoluto
+#abs(x)
+
+abs(-9.43)
+
+#factorial
+#factoral(x)
+
+factorial(3)
+factorial(5)
+
+
+#función choose, identicica de cuantas formas se puede repartir n elementos 
+# rn m casos. por ejemplo: si tengo 6 remeras y sólo quiero usar 4
+#choose(n,m)
+
+choose(6,2)
+
+choose(3,0)
+
+choose(3,1)
+
+choose(3,2)
+
+choose(3,3)
 
 
 
+choose(4,0)
+
+choose(4,1)
+
+choose(4,2)
+
+choose(4,3)
+
+choose(4,4)
 
 
 
+choose(5,0)
 
+choose(5,1)
 
+choose(5,2)
 
+choose(5,3)
+
+choose(5,4)
+
+choose(5,5)
+
+## 1 6 15 20 15 6 1
+#se cumple la combinatoria del triamgulo de pascal
