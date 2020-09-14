@@ -176,3 +176,26 @@ choose(5,5)
 
 ## 1 6 15 20 15 6 1
 #se cumple la combinatoria del triamgulo de pascal
+
+
+#trigonometría en Radianes
+## todas las funcioenes de R están basadas en radianes. si se nececita hacer la
+## traduccion a grados hay que aplicar una regla de 3 (multiplicando por pi y 
+## dividiendo por 180) para sin(x), cos(x) y tan(x). De forma similar para las 
+## funciones asin(x), acos(x) y atan(x) se deberá multiplicar por 180 y dividir 
+## por pi
+
+
+cos(((60*pi)/180))
+sin(((60*pi)/180))
+
+
+asin(0.8660254) *180/pi
+
+
+x = seq(0,2*pi,0.1)
+plot(x,sin(x),type="l",col="blue",lwd=3, xlab=expression(x), ylab="")
+lines(x,cos(x),col="green",lwd=3)
+lines(x, tan(x), col="purple",lwd=3)
+legend("bottomleft",col=c("blue","green","purple"),
+       legend=c("Seno","Coseno", "Tangente"), lwd=3, bty="l")
