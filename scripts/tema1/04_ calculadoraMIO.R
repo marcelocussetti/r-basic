@@ -199,3 +199,26 @@ lines(x,cos(x),col="green",lwd=3)
 lines(x, tan(x), col="purple",lwd=3)
 legend("bottomleft",col=c("blue","green","purple"),
        legend=c("Seno","Coseno", "Tangente"), lwd=3, bty="l")
+
+##numeros con coma flotante
+# jugando con pi
+
+print(pi,12)
+
+print(digits=12, pi)
+
+round(pi,4)
+
+floor(pi)
+floor(-pi)
+
+ceiling(pi)
+
+ceiling(-pi)
+
+trunc(pi)
+
+trunc(-pi)
+
+
+
