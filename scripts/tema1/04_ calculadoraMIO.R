@@ -221,4 +221,35 @@ trunc(pi)
 trunc(-pi)
 
 
+x = 12
+
+r = 25
+
+
+
+suma = function(x){
+  x+2
+}
+
+
+operacion= function(r,x){
+        x = suma(x);
+        x = suma(x);
+        x = suma(x);
+        x = suma(x);
+        x = suma(x);
+        x = suma(x);
+        suma(x)
+        
+        }
+operacion(r,x)
+
+
+
+
+
+
+
+
+
 
