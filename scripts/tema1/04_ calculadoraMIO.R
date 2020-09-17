@@ -239,7 +239,8 @@ operacion= function(r,x){
         x = suma(x);
         x = suma(x);
         x = suma(x);
-        suma(x)
+        x = suma(x);
+        x*r
         
         }
 operacion(r,x)
