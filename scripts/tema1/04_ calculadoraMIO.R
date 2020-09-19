@@ -246,11 +246,54 @@ operacion= function(r,x){
 operacion(r,x)
 
 
+###################################
+#números complejos
+#se define como número complejo aquel que tiene una parte rear y una imaginaria
+#ejemplo: 3+21
+
+class (5+4i)
+
+#operaciones con imaginarios reales
+
+complejo1 = 5+4i
+complejo2 = -3+7i
+
+complejo1*2
+complejo1/2
+sqrt(complejo1)
+
+complejo1*complejo2
+
+complejo1/complejo2
+
+#definir y operar ccon complejos con el imaginario irracional
+
+complejo3= complex(real = pi, imaginary = sqrt(2))
+complejo3
+
+#trabajar con raices negativas
+complejo4= sqrt(as.complex(-5))
+complejo4
+
+###Módulo = sqrt(Re(z)^2 + Im(z)^2)
+Mod(complejo4)
 
 
+#obtener las diferentes partes de un complejo
+#parte real
+Re(complejo1)
+#parte imaginaria
+Im(complejo1)
+#conjugado
+Conj(complejo1)
 
+#otra forma de definir un complejo
+complejo5= complex(modulus = 5, argument = pi/2)
+complejo5
 
-
-
+Mod(complejo5)
+Arg(complejo5)
+pi/2
+comple
 
 
