@@ -102,6 +102,7 @@ sqrt(25)
 #exp(x)
 
 exp(1)
+#así se obtiene e "exp(1) = 2.718282"
 
 #logaritmo nepeiano
 #log(x)
@@ -248,7 +249,7 @@ operacion(r,x)
 
 ###################################
 #números complejos
-#se define como número complejo aquel que tiene una parte rear y una imaginaria
+#se define como número complejo aquel que tiene una parte real y una imaginaria
 #ejemplo: 3+21
 
 class (5+4i)
@@ -266,7 +267,7 @@ complejo1*complejo2
 
 complejo1/complejo2
 
-#definir y operar ccon complejos con el imaginario irracional
+#definir y operar con complejos con el imaginario irracional
 
 complejo3= complex(real = pi, imaginary = sqrt(2))
 complejo3
@@ -294,6 +295,7 @@ complejo5
 Mod(complejo5)
 Arg(complejo5)
 pi/2
-comple
 
+
+exp(1)
 
