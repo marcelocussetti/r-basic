@@ -299,3 +299,60 @@ pi/2
 
 exp(1)
 
+
+################ ejercicio 1
+dias=((250000000/60)/60)/24
+dias
+
+minutos=250000000/60
+minutos
+
+
+horas=minutos/60
+horasEnteras=minutos%/%60
+restoHorasMin= round(minutos%%60)
+
+horas
+horasEnteras
+restoHorasMin
+
+
+diasEnt=horasEnteras%/%24
+restoDiasHoras=horasEnteras%%24
+diasEnt
+restoDiasHoras
+####2893 dias, 12horas y 27 minutos
+
+bisiestos=2
+
+anosEnt=diasEnt%/%365
+restoAnosDias=(diasEnt%%365)-bisiestos
+
+anosEnt
+restoAnosDias
+
+## 7 años, 336 días (- 2 bisiestos), 12 horas y 27 minutos
+##fecha calendario lunes 2 de diciembre del 2025 a las 12:27
+
+####### ejercicio2
+#####Ax+B=0
+##no me sirve una función con sólo dos parámetros, agregué "r" para sumar el 
+##resultado. de otra forma una parte del cálculo se resolvía mentalmente y la 
+##otra en R... 
+
+ecuacion= function(n1,n2,r)
+  {(r-n2)/n1}
+
+
+ecuacion(5,3,0)
+ecuacion(7,4,18)
+ecuacion(1,0,1)
+
+
+#######ejercicio 3
+eTres=exp(1)*3
+round(eTres-pi,3)
+
+complejo=(2+3i)^2/(5+8i)
+round(Mod(complejo),3)
+
