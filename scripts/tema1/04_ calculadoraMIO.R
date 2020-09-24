@@ -136,7 +136,7 @@ factorial(5)
 
 
 #función choose, identicica de cuantas formas se puede repartir n elementos 
-# rn m casos. por ejemplo: si tengo 6 remeras y sólo quiero usar 4
+# en m casos. por ejemplo: si tengo 6 remeras y sólo quiero usar 4
 #choose(n,m)
 
 choose(6,2)
@@ -174,6 +174,8 @@ choose(5,3)
 choose(5,4)
 
 choose(5,5)
+
+
 
 ## 1 6 15 20 15 6 1
 #se cumple la combinatoria del triamgulo de pascal
