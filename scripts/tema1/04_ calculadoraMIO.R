@@ -175,7 +175,7 @@ choose(5,4)
 
 choose(5,5)
 
-
+choose(6,3)
 
 ## 1 6 15 20 15 6 1
 #se cumple la combinatoria del triamgulo de pascal
