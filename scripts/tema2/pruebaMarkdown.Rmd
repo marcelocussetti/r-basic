@@ -1,0 +1,59 @@
+---
+title: "empezando con LateX"
+author: "Marcelo Bussetti"
+date: "5/10/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+Hola, muy buenas. Vamos a ver como sale esto: $\frac{a}{b}$ debería quedar de primera...
+$\Longrightarrow \bigoplus \Longleftarrow$
+
+$x^2{yz}=\frac{a}{s}$
+
+versión normal del Sumatorio:
+$\sum_{i=0}^{n}$
+
+versión extendida del Sumatorio:
+$$\sum_{i=0}^{n}$$
+
+para usar $\mathbf{Negrita}$ se puede usar cuaquiera de los dos $\boldsymbol{estilos}$
+
+para sumar expresiones dentro de un parrafo podemos optar un tamaño mínimo: $\frac{a}{b}$ o el tamaño real: $\dfrac{a}{b}$
+
+Tambien podemos especificar que los delimitadores se adapte o no a la expresión que contienen. si no se adapta: $(\dfrac{a}{b})$ y si o hace $\left(\dfrac{a}{b}\right)$
+
+
+
+Para representar matrices se debe declarar el código de la siguiente manera:
+$$\begin{matrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{matrix} $$
+y si lo necesitas incluir dende de paréntesis se debe incluir un "pmatrix":
+$$\begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{pmatrix} $$
+
+
+
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
