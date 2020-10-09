@@ -379,6 +379,35 @@ summary {
 <p>para sumar expresiones dentro de un parrafo podemos optar un tamaño mínimo: <span class="math inline">\(\frac{a}{b}\)</span> o el tamaño real: <span class="math inline">\(\dfrac{a}{b}\)</span></p>
 <p>Tambien podemos especificar que los delimitadores se adapte o no a la expresión que contienen. si no se adapta: <span class="math inline">\((\dfrac{a}{b})\)</span> y si o hace <span class="math inline">\(\left(\dfrac{a}{b}\right)\)</span></p>
 <p>Para representar matrices se debe declarar el código de la siguiente manera: <span class="math display">\[\begin{matrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{matrix} \]</span> y si lo necesitas incluir dende de paréntesis se debe incluir un “pmatrix”: <span class="math display">\[\begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{pmatrix} \]</span></p>
+<p>para hacerlo con un determinante usamos “vmatrix”: <span class="math display">\[\begin{vmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{vmatrix} \]</span></p>
+<p>con corchetes “bmatrix”: <span class="math display">\[\begin{bmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{bmatrix} \]</span></p>
+<p>con llaves “Bmatrix”: <span class="math display">\[\begin{Bmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{Bmatrix} \]</span> con doble barra “Vmatrix”: <span class="math display">\[\begin{Vmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; a_{14} \\ a_{21} &amp; a_{22} &amp; a_{23} &amp; a_{24} \\a_{31} &amp; a_{32} &amp; a_{33} &amp; a_{34} \end{Vmatrix} \]</span> Sistemas de ecuaciones: <span class="math display">\[\left.\begin{array}{l} ax+by=c\\
+ex-fy=g \end{array}\right\}\]</span> dd</p>
+<p><span class="math display">\[|x|=\left\{\begin{array}{rr} -x &amp; \text{si } x\le 0\\ x &amp; \text {si }x\ge 0\end{array}\right.\]</span></p>
+<pre class="r"><code>a=2+5
+a</code></pre>
+<pre><code>## [1] 7</code></pre>
+<div id="mi-primera-chunk" class="section level3">
+<h3>mi primera chunk</h3>
+<p>Estamos calcuando <span class="math inline">\(\sqrt{2} - e^{-2}\)</span>:</p>
+<pre><code>[1] 1.278878</code></pre>
+<p>secuencias</p>
+<pre class="r"><code>sec = 10:20
+sec</code></pre>
+<pre><code>##  [1] 10 11 12 13 14 15 16 17 18 19 20</code></pre>
+<pre class="r"><code>cumsum(sec)</code></pre>
+<pre><code>##  [1]  10  21  33  46  60  75  91 108 126 145 165</code></pre>
+<pre class="r"><code>sqrt(sec)</code></pre>
+<pre><code>##  [1] 3.162278 3.316625 3.464102 3.605551 3.741657 3.872983 4.000000 4.123106
+##  [9] 4.242641 4.358899 4.472136</code></pre>
+<p>Diferentes formas de expresar y documentar una raíz cuadrada:</p>
+<ul>
+<li><p>En <span class="math inline">\(\LaTeX\)</span>: <span class="math inline">\(\sqrt{2}\)</span></p></li>
+<li><p>En <code>R</code> haciendo 1.4142136</p></li>
+<li><p>Mix <span class="math inline">\(\sqrt{2}=\)</span> 1.4142136</p></li>
+</ul>
+<p>para conocer el valor de <span class="math inline">\(\pi\)</span> sólo debes poner 3.1415927</p>
+<p>El vector de <span class="math inline">\(\mathbf{Valores}\)</span> contiene <span class="math inline">\(n=\)</span> 13. estos valores tienen una media <span class="math inline">\(\overline{x}=\)</span> 34.08 y una deviación típica de <span class="math inline">\(s=\)</span> 29.31</p>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
 <p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
 <pre class="r"><code>summary(cars)</code></pre>
@@ -389,6 +418,7 @@ summary {
 ##  Mean   :15.4   Mean   : 42.98  
 ##  3rd Qu.:19.0   3rd Qu.: 56.00  
 ##  Max.   :25.0   Max.   :120.00</code></pre>
+</div>
 </div>
 <div id="including-plots" class="section level2">
 <h2>Including Plots</h2>

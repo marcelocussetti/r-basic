@@ -38,6 +38,71 @@ y si lo necesitas incluir dende de paréntesis se debe incluir un "pmatrix":
 $$\begin{pmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{pmatrix} $$
 
 
+para hacerlo con un determinante usamos "vmatrix":
+$$\begin{vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{vmatrix} $$
+
+con corchetes  "bmatrix":
+$$\begin{bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{bmatrix} $$
+
+con llaves "Bmatrix":
+$$\begin{Bmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{Bmatrix} $$
+con doble barra  "Vmatrix":
+$$\begin{Vmatrix} a_{11} & a_{12} & a_{13} & a_{14} \\ a_{21} & a_{22} & a_{23} & a_{24} \\a_{31} & a_{32} & a_{33} & a_{34} \end{Vmatrix} $$
+Sistemas de ecuaciones:
+$$\left.\begin{array}{l} ax+by=c\\
+ex-fy=g \end{array}\right\}$$
+dd
+
+$$|x|=\left\{\begin{array}{rr} -x & \text{si } x\le 0\\ x & \text {si }x\ge 0\end{array}\right.$$
+
+
+```{r}
+a=2+5
+a
+```
+
+
+### mi primera chunk
+Estamos calcuando $\sqrt{2} - e^{-2}$:
+```{r pruebaChunck , echo=FALSE, eval=TRUE, comment= NA }
+calc=sqrt(2)-exp(-2)
+calc
+
+```
+
+
+secuencias
+
+```{r secuencias , echo=TRUE, results='markup'}
+
+sec = 10:20
+sec
+cumsum(sec)
+sqrt(sec)
+
+```
+
+Diferentes formas de expresar y documentar una raíz cuadrada:
+
+- En $\LaTeX$: $\sqrt{2}$
+
+- En `R` haciendo `r sqrt(2)`
+
+- Mix $\sqrt{2}=$ `r sqrt(2)`
+
+para conocer el valor de $\pi$ sólo debes poner `r pi`
+
+
+```{r juegos, results='hide', echo=FALSE}
+
+valores= c(9,8,56,12,95,45,12,45,45,6,74,1,35)
+media = mean(valores)
+cant= length(valores)
+desvTip = sd(valores)
+```
+
+El vector de $\mathbf{Valores}$ contiene $n=$ `r cant`. estos valores tienen una media $\overline{x}=$ `r round(media,2)` y una deviación típica de $s=$ `r round(desvTip,2)`
+
 
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
