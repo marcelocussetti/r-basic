@@ -1,0 +1,74 @@
+---
+title: "Documentación de texto"
+author: "Marcelo Bussetti"
+date: "10/10/2020"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+# Título 1
+
+## Título 2
+
+### Título 3
+
+a
+
+###### Título 6
+
+El texto se ecribe en forma regular, puede incluir código de `R` o expresiones 
+en $\LaTeX$
+
+Una nueva línea necesita doble enter!
+
+Para sumar texto en *cursiva* podemos usar el asterísco *así como ahora* o bien el guión bajo _de esta forma_
+
+Para sumar texto en **negrita** podemos usar el doble asterísco **así como ahora** o bien el doble guión bajo __de esta forma__
+
+Los superíndices se declaran con el ***sombrerito*** de la siguiente manera: super^3^
+
+El código ASCII de la *olita ~* es ALT 126 y Markdown la usa para ~~tachar una frase~~
+
+declarar un link: [link](http://www.4ns.com.ar)
+
+
+Guión corto: -- es así.
+
+Gión largo: --- de esta manera.
+
+Ecuaciones en línea: $S = \pi\cdot r^2$
+
+incorporar una imagen ![tablero de ajedres](tableroajedres.png)
+
+***
+una linea divisoria!
+
+#### Listas no ordenadas
+
+* a
+* b
+* c
+    + c1
+    + c2
+        + c2a
+        
+
+#### Listas ordenadas
+
+1. a
+2. b
+3. c
+    1. c1
+    1. c2
+        1. c2a
+        
+        
+        
+### Tablas
+
+alumno         |     edad       |      nota
+---------------|----------------|-------------------
+marcelo        |  45            |  9
+
