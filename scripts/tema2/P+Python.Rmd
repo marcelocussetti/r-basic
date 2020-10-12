@@ -1,0 +1,85 @@
+---
+title: "R+Python"
+author: "Marcelo Bussetti"
+date: "12/10/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Reticulate
+
+```{r}
+library(reticulate)
+
+use_python("C:/Users/marce/anaconda3/python.exe")
+os = import("os")
+os$listdir(".")
+
+```
+```{r}
+source_python("sumaPy.py")
+suma(3,7)
+```
+
+```{r}
+np = import("numpy", convert = FALSE)
+
+vector1 = np$array(c(1:9))
+sumaVector = vector1$cumsum()
+
+print(sumaVector)
+
+py_to_r(sumaVector)
+
+```
+
+
+
+
+```{r}
+dataSetR = iris
+head (dataSetR)
+dataSetP = r_to_py(dataSetR)
+```
+
+```{python}
+r.dataSetP.head()
+```
+
+
+
+
+```{r}
+library(Matrix)
+N=6
+set.seed(123)
+i = sample(N,N, replace = F)
+j = sample(N,N, replace = F)
+x = runif(N)
+matrizSparse <- sparseMatrix(
+  i=i,
+  j=j,
+  x=x,
+  dims= c(N, N)
+)
+
+matrizSparse
+
+matrixSparse_py = r_to_py (matrizSparse)
+```
+
+```{python}
+
+matriz = r.matrixSparse_py
+
+print(matriz)
+
+```
+
+
+
+
+
