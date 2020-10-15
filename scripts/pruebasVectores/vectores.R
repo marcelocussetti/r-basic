@@ -41,7 +41,7 @@ vecMod
 
 vInicial = 2
 vFinal = 76
-diferencia = 3
+diferencia = 8
 cantidad = 13
 
 
@@ -82,4 +82,102 @@ eje3
 
 secuenciaC = c(secuencia1, secuencia2, eje3)
 secuenciaC
+
+
+##Aplicar una función a todos los componentes de un vector
+
+mas = secuencia1 + pi
+mas
+
+por = secuencia1 * pi
+por
+
+raiz = sqrt(secuencia1)
+raiz
+
+
+### para aplicarles funciones especificas
+funVector = sapply(secuencia1, FUN = function(elemento){sqrt(elemento)})
+funVector
+
+
+
+#####función para obteenr el cuadrado de cada elemento de un vector
+cuadrado = function(xvec){xvec^2}
+
+valVector = 1:6
+
+funVectorX = sapply(valVector, FUN = cuadrado)
+funVectorX
+
+
+
+
+##### formula para una regreción lineal 
+
+cd = function(num){ summary(lm((1:4)~c(1:3,num))) $r.squared }
+cd(4)
+
+funVector2= sapply(eje1, FUN = cd)
+funVector2
+
+
+###operaciones con vectores:
+
+vectorE = 1:100
+resultadoV1 = vectorE^2/(vectorE^2+1)
+resultadoV1
+
+resultadoV2 = sqrt(vectorE)*pi
+resultadoV2
+
+###Funciones aplicadas a un vector
+
+length(vectorE)
+max(vectorE)
+min(vectorE)
+sum(vectorE)
+prod(vectorE)
+mean(vectorE)##media aritmética
+diff(vectorE)##diferencia entre los componenetes de un vector
+cumsum(vectorE)### suma y acumula en cada uno de los términos del vector
+sort(vectorE)### ordena el vector segun el orden natural numerico o alfabético
+rev(vectorE)
+
+
+####investigar SORT()
+
+
+##Ejercicio 1
+###combinar sort y rev para crear una función que dado un vector x nos 
+###devuelva ordenado en orden decreciente
+
+vEjer1 = c(2,3,16,7,5,8,9,4)
+vEjer1
+decreciente = function(vectorEje1){
+  
+  vEjer1 = sort(vEjer1)
+  vEjer1 = rev(vEjer1)
+  
+  
+  vEjer1
+}
+decreciente(vEjer1)
+
+##Ejercicio 2
+##da igual el orden en el que se apliquen las funciones sort() y rev()
+
+# no, obviamente no da lo mismo
+
+
+##Ejercicio 3
+###investigar los parámetros de la función sort() para ver si hay otra forma de 
+###resolver el ejercicio 1
+vEjer3 = c(2,3,16,7,5,8,9,4)
+vEjer3
+
+ejer3 = sort(vEjer3, decreasing = TRUE)
+ejer3
+
+
 
