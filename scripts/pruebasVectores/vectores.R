@@ -36,3 +36,50 @@ vec
 vecMod = fix(vec)
 vecMod
 
+##Progresiones aritméticas
+###formas de generarlas:
+
+vInicial = 2
+vFinal = 76
+diferencia = 3
+cantidad = 13
+
+
+secuencia1 = seq(vInicial,vFinal, by = diferencia)
+secuencia1
+
+
+secuencia2 = seq(vInicial,vFinal, length.out = cantidad)
+secuencia2
+
+secuencia3 = seq(vInicial, length.out = cantidad, by = diferencia)
+secuencia3
+
+secuencia4 = vInicial:vFinal
+secuencia4
+
+
+##ejercicio:
+###  imprimer los números del 1 al 20
+
+eje1 = 1:20
+eje1
+
+
+###Imprimir los priemros 20 números pares
+
+eje2 = seq(2, length.out = 20, by = 2)
+eje2
+
+
+### imprimir 30 números equidistantes entre 17 y 98, mostrando sólo 4 cifras 
+###significativas
+
+eje3 = round(seq(17, 98, length.out = 30), 4)
+eje3
+
+##función c (contatenar)
+
+secuenciaC = c(secuencia1, secuencia2, eje3)
+secuenciaC
+
