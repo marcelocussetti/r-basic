@@ -179,5 +179,26 @@ vEjer3
 ejer3 = sort(vEjer3, decreasing = TRUE)
 ejer3
 
+##Subvectores
+###acceder a diferentes partes del vector
+
+vectorSub = c(3:35)
+vectorSub
 
 
+indiVector = 2
+vSub1 = vectorSub[indiVector]
+vSub1
+
+vSub2 = vectorSub[length(vectorSub)]
+vSub2
+
+
+indiVector2 = c((1:5),20:length(vectorSub))
+indiVector2
+vSub3 = vectorSub[indiVector2]
+vSub3
+
+indiVector4 = 8
+vSub4 = vectorSub[-indiVector4]
+vSub4
