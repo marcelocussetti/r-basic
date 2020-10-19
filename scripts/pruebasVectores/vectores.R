@@ -179,6 +179,29 @@ vEjer3
 ejer3 = sort(vEjer3, decreasing = TRUE)
 ejer3
 
+
+##acceder a los elementos que estén en posiciones pares o impares
+
+vEjer4 = seq(3, 50, by= 1.5)
+vEjer4
+
+vPares = vEjer4[seq(2,length(vEjer4), by=2)]
+vPares
+
+vInPares = vEjer4[seq(1,length(vEjer4), by=2)]
+vInPares
+
+###encontrar lo números pares del vector
+
+nPares = vEjer4 [vEjer4%%2 == 0]
+nPares
+
+nInPares = vEjer4 [vEjer4%%2 == 1]
+nInPares
+
+nDecimal = vEjer4 [vEjer4%%1 == .5]
+nDecimal
+
 ##Subvectores
 ###acceder a diferentes partes del vector
 
@@ -202,3 +225,23 @@ vSub3
 indiVector4 = 8
 vSub4 = vectorSub[-indiVector4]
 vSub4
+
+
+##filtros en el vector
+###se utilizan los operadores lógicos comunes
+
+vFiltro1 = c(2,3,16,7,5,8,9,4)
+vFiltro1 = vFiltro1[vFiltro1 >= 4 & vFiltro1 <=10 & vFiltro1!= 9]
+vFiltro1
+
+
+vFiltro2 = c(13,2,65,9,84,6,3,16,7,5,8,2,9,4)
+vFiltro21 = which(vFiltro2 ==65)
+vFiltro21
+
+vFiltro22 = which.min(vFiltro2)
+vFiltro22
+
+vFiltro23 = which(vFiltro2 == min(vFiltro2))
+vFiltro23
+vFiltro2
