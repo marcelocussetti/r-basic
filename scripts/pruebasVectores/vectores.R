@@ -245,3 +245,45 @@ vFiltro22
 vFiltro23 = which(vFiltro2 == min(vFiltro2))
 vFiltro23
 vFiltro2
+
+
+
+### masaje de vectores
+
+v= c(1:10)
+v
+
+v[11]=NULL
+v[13]=v[2]*5
+v
+
+##Como remover los valores NA de um vector
+
+t = sum(v, na.rm = TRUE)
+t
+
+w = is.na(v)
+w
+
+r = which(is.na(v))
+r
+
+####remplazar los NA por la media del vector
+
+y = v
+y[is.na(y)] = mean(y, na.rm=TRUE)
+y
+
+#### Negar los NA de un vector
+p = v[!is.na(v)]
+p
+
+f = cumsum(v[!is.na(v)])
+f
+
+#### Quitar los NA del vector
+d = na.omit(v)
+d
+
+g = cumsum(na.omit(v))
+g
